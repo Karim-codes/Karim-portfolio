@@ -1,0 +1,343 @@
+body{
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;    
+    background-color: #1c1d25;;
+}
+
+section{
+    background-color: white;
+    
+}
+
+
+footer{
+    background-color: #1c1d25;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+
+li{
+    /* width: 200px;    */
+
+    text-decoration: none;
+}
+
+.hero{
+    background-color: #1c1d25;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+}
+
+
+.hero-area{
+display: flex;
+height: 100%;
+justify-content: space-between;
+align-items: center;
+}
+
+.hero-text{
+    margin-left: 80px;
+    margin-bottom: 100px;
+}
+
+
+h1{
+    font-weight: 700;
+    margin: 0;
+}
+h2{
+    font-size: 40px;
+}
+
+p{
+    
+    margin: 0;
+    font-weight: 400;
+}
+
+.subtext{
+    font-size: 15px;
+    font-weight: 300px;
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: aqua;
+    text-align: center;
+    font-size: 35PX;
+    font-weight: 400;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button:hover{
+    background-color: chartreuse;
+}
+
+.button:active{
+    background-color: crimson;
+    color: 808080;
+}
+
+.socials{
+    padding-bottom: 150px;
+    
+    
+}
+.social:hover{ 
+    border: #04AA6D;
+    
+    padding: 5px 1px 1px 5px;
+    margin: 6px 3px;
+    opacity: 1.9;
+    transition: 0.6s;
+    background-color: #04AA6D;
+    border-radius: 50PX;
+}
+
+.social{
+    margin: 20px;
+}
+
+
+
+.logo{
+    height: 88px;
+    margin: 30px;
+}
+
+.sub-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+.headshot{
+    margin: px;
+    margin-top: 10px ;
+    width: 190px;
+    height: 240px;
+    border-radius: 180px;
+}
+.headshot-container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.project-card{
+    width: 250px;
+    height: 400px;
+    box-shadow: 5px 5px 20px rgb(181, 179, 179);
+    margin: 0px;
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container{
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+    .hero{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .social{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .hero-area{
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+    .sub-section{
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+    }
+
+    .sub-section-alternative{
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .container1 {
+        border-radius: 50px;
+        width: 900px;
+        background-color: #48459d3e;
+        padding: 20px;
+        display: flex;
+        margin-left: 5px; 
+      }
+      
+      .socials{
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+        
+      }
+
+      .social:hover{ 
+        border: #04AA6D;
+        color: rgb(221, 11, 11);
+        padding: 30px 20px;
+        margin: 40px 20px;
+        opacity: 0.9;
+        transition: 0.5s;
+        background-color: #04AA6D;
+        border-radius: 25PX;
+    }
+
+} 
+    
+
+.project-image{
+    margin-top: 25px;
+    width: 120px;
+    border-radius: 70px;
+    box-shadow: 4px 4px 10px rgb(51, 184, 57);
+}
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.project-link{
+    text-decoration: none;
+    color: rgb(13, 184, 45);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px)  {
+    .hamburger{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 10px;   
+    }
+
+    ul{
+        display: none;
+        background-color: #1c1d25;
+        margin: 20px;
+        align-self: center;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav{
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        background-color:  #1c1d25;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    
+}
+
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 15px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: none;  /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  input[type=email], textarea {
+    width: 100%; /* Full width */
+    padding: 15px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: none;  /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 50px;
+    width: 900px;
+    background-color: #48459d3e;
+    padding: 20px;
+    display: flex;
+    margin-left: 50px;
+    
+  }
+  .footh2{
+    margin-left: 1px;
+
+  }
