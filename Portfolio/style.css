@@ -283,8 +283,11 @@ a{
     ul{
         display: none;
         background-color: #1c1d25;
-        margin: 20px;
+        margin: 10px;
         align-self: center;
+        width: 90px;
+        font-size: medium;
+        font-size: 40%;
     }
 
     ul.show {
